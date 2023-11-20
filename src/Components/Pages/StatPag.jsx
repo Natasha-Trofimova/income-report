@@ -1,24 +1,18 @@
 import './App.css'
-// import css from '../../Styles/Local/formShow.css'
+import { useParams } from 'react-router-dom'
 import FormShow from '../View/Local/FormShow'
-
-// const { FormShowContainer, Cell, FormShowContLine } = css
-
+import { useState } from 'react'
+import StatisticsDisplayGraph from '../View/Local/StatisticsDisplayGraph'
 
 function StatPag(props) {
-
+  const { viewType } = useParams()
   const { showDataStat } = props
-
-  // const [dataShow, setDataShow] = useState([])
-
-
+  const [diagramShow, setDiagramShow] = useState(false)
   return (
     <>
-      <div className="MainDiv">
-        страница статистики
-
-        <FormShow dataShow={showDataStat} />
-
+      <div className="StatDiv">
+        <FormShow viewType={viewType} setShowD={setDiagramShow} dataShow={showDataStat} />
+        <StatisticsDisplayGraph viewType={viewType} showD={diagramShow} dataShow={showDataStat} />
       </div>
     </>
   )

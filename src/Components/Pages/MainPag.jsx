@@ -9,7 +9,6 @@ function MainPag(props) {
   return (
     <>
       <div className="MainDiv">
-        Главная страница
         <Form firstAction={action} />
       </div>
     </>

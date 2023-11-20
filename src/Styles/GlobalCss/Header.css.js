@@ -11,9 +11,18 @@ const css = {
   justify-content: space-between;
   position: relative;
   align-items: center;
+  font-family: 'Teko', sans-serif;
   `,
-
-
+  ButtonCSS: styled.button`
+  margin-right: 10px;
+  display: block;
+  padding: 8px;
+  border-radius: 6px;
+  background-color: #F9F871;
+  cursor: pointer;
+  opacity: 0.7;
+  color: black;
+  `,
   HeaderCSS: {
     Logo: styled.div`
     padding: 8px;

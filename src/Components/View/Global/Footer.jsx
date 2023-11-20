@@ -10,7 +10,7 @@ function Footer() {
   return (
     <>
     <FooterContainer>
-    Footer
+    @Tosga1_1
     </FooterContainer>
     </>
   )

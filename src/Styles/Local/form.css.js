@@ -46,7 +46,23 @@ align-items: center;
 justify-content: center;
 background-color: ${props => props.backgroundColor};
 
+`,
+FormCheck: styled.div`
+width: 234px;
+margin: 5px;
+padding: 3px;
+background-color: #B9B9B9;
+border-radius: 6px;
+display: flex;
+flex-direction: column;
+align-items: center;
+`,
+FormCheckLabel: styled.span`
+margin-top: 5px;
+color: black;
+font-family: 'Tilt Neon', sans-serif;
 `
 }
+
 
 export default css

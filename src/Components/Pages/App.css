@@ -1,15 +1,21 @@
 .MainDiv{
-  /* display: flex; */
-  /* flex-direction: column; */
   min-height: 78vh;
-  /* justify-content: space-between; */
   align-items: center;  
   width: 100%;
-  height: 78vh;
   background-color: #B87FA5;
   display: flex;
   flex-direction: column;
-  /* algin-items: center; */
   position: relative;
   align-items: center;
+}
+
+.StatDiv{
+  display: flex;
+    min-height: 78vh;
+    width: 100%;
+    background-color: #B87FA5;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
